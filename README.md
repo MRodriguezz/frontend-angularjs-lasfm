@@ -1,7 +1,6 @@
-# Learning AngularJS with LastFM
+# Learning AngularJS with Github
 In this project you must use Github's public timeline to build a table of all events.
-We will use the Last.FM api for this project. Go to http://www.last.fm/api to learn
-how to use it.
+The data is in JSON format in the data folder, with the name [2015-01-01-15.json](data/2015-01-01-15.json).
 
 
 ## Prepare project
@@ -31,4 +30,5 @@ sudo bower install
 ## Reflection Q's
 1. What is the general organization of AngularJS projects?
 2. What do you think AngularJS is doing in the background?
-3. What does dependency injection mean?
+
+#### http://mrodriguezz.github.io/frontend-angularjs. 

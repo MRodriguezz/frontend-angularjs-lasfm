@@ -1,16 +1,27 @@
-// Javascript Code.
-angular.module('app', [])
-.controller('PasswordController', function PasswordController($scope) {
-  $scope.title = "This is AngularJS and Jasmin!";
-  $scope.password = '';
-  $scope.grade = function() {
-    var size = $scope.password.length;
-    if (size > 8) {
-      $scope.strength = 'strong';
-    } else if (size > 3) {
-      $scope.strength = 'medium';
-    } else {
-      $scope.strength = 'weak';
-    }
-  };
-});
+
+//********************************************************************************************************************************************
+//*************************************************************** LLAMADO DEL API ************************************************************
+(function(){
+	var appFiltro=angular.module("ControladorFiltros", []);
+
+	appFiltro.filter("Url", function(){
+		return function(item){
+			return (JSON.stringify(item)).slice(10,-18);
+		};
+	});
+
+	appFiltro.controller("filtrosCtrl",function($scope,$http){
+
+		$http.get("http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=87a5b09be55cddbf22c3552c6ac0068c&format=json").success
+		(function(data){
+
+			$scope.informacion=data.tracks.track;
+		});
+//********************************************************************************************************************************************
+//********************************************************* BOTON ORDEN DE LISTA**************************************************************
+		$scope.ordenPor = function(orden) {
+			$scope.ordenSeleccionado = orden;
+		};
+
+	});
+})();

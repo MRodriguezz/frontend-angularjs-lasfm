@@ -1,0 +1,56 @@
+body {
+	background: url(../images/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+.titulo {
+	font-family: arial,verdana,serif,impact;
+	font-size: 60px;
+	color: #FFFFFF;
+	text-shadow: 0 0 0.5em #2E2EFE, 0 0 0.5em #2E2EFE, 0 0 0.5em #2E2EFE
+}
+
+img {
+	width: 150px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+/*ESTILO DE LETRAS EN EL API*/
+.cel {
+	font-family: arial,verdana,serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 0 0 0.3em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff
+}
+
+td {
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+}
+
+th {
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+}
+
+a:hover{   
+	text-decoration:none;
+	text-shadow: 0 0 0.2em #FFFF00, 0 0 0.2em #FFFF00, 0 0 0.2em #FFFF00
+}
+
+table {
+	opacity: .9;
+}
+
+
+
+
+
